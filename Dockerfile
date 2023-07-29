@@ -1,4 +1,4 @@
-FROM srzzumix/arm-none-eabi
+FROM ubuntu:22.04
+RUN apt-get update \
+    && apt-get install -y usbutils
 COPY src/ /dst/
-
-# RUN apt-get install usbutils
