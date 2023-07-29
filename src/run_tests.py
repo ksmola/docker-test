@@ -1,7 +1,6 @@
 import os
 import sys
 import serial
-import doesntexist
 
 print("success")
 
