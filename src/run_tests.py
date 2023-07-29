@@ -5,7 +5,7 @@ import serial
 print("success")
 
 def runTests():
-    return
+    return 1
 
 def main():
     port = sys.argv[1]
