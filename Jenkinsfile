@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''
         cat /etc/os-release
-        python3 /dst/run_tests.py
+        python /dst/run_tests.py
         lsusb |grep STM
         '''
       }
