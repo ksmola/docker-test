@@ -1,4 +1,3 @@
 FROM ubuntu:22.04
-RUN apt-get update \
-    && apt-get install -y usbutils
+RUN apt-get update -y
 COPY src/ /dst/
