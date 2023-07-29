@@ -6,7 +6,7 @@ pipeline {
         sh '''
         cat /etc/os-release
         python3 /dst/run_tests.py
-        arm-none-eabi-gdb -v
+        lsusb |grep STM
         '''
       }
     }
