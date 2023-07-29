@@ -4,9 +4,10 @@ pipeline {
     stage('Test') {
       steps {
         sh '''
-        arm-none-eabi-gdb -v
+        cat /etc/os-release
         lsusb |grep STM
         python3 /dst/run_tests.py
+        arm-none-eabi-gdb -v
         '''
       }
     }
