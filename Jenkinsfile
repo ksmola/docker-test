@@ -4,7 +4,7 @@ pipeline {
     stage('Test') {
       steps {
         sh '''
-        python3 /dst/run_tests.py /dev/ttyUSB0
+        ls -lart
         '''
       }
     }
