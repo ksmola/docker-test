@@ -8,4 +8,4 @@ RUN mkdir ~/rsd-tools \
     && PATH=$PATH:$HOME/rsd-tools/gcc-arm-none-eabi-10.3-2021.10/bin \
     && arm-none-eabi-gdb -v
 RUN pip install pyserial
-COPY src/ /dst/
+COPY src/ /dst/ 
