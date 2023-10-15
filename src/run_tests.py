@@ -5,7 +5,6 @@ import serial
 print("success")
 
 def runTests():
-
     return 1
 
 def main():
